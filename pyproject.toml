@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heartbrain_cca"         
+version = "1.0.0"
+description = "One-component CCA between EEG band features and cardiac targets with purged blocked CV, permutation null, Haufe patterns and a model registry"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "scikit-learn"]
+
+[tool.setuptools]
+packages = ["heartbrain_cca"]
+
+[tool.setuptools.package-dir]
+heartbrain_cca = "src"
